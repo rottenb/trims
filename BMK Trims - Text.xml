@@ -1,0 +1,73 @@
+<Gauge Name="BMK Trims Text" Version="1.0">
+	<Image Name="BMKTrimsBackground.png"  ImageSizes="256,128,256,128"/>
+	<!-- Aileron Trim -->
+	<Element>
+		<Position X="5" Y="30" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>25</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>Aileron: </Value>
+		</GaugeText>
+	</Element>
+
+	<Element>
+		<Position X="215" Y="30" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>30</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>CENTER</HorizontalAlign>
+			<Value>%(A:AILERON TRIM PCT, Percent over 100)%!01.2f!</Value>
+		</GaugeText>
+	</Element>
+
+	<!-- Elevator Trim -->
+	<Element>
+		<Position X="4" Y="66" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>25</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>Elevator: </Value>
+		</GaugeText>
+	</Element>
+
+	<Element>
+		<Position X="215" Y="66" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>30</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>CENTER</HorizontalAlign>
+			<Value>%(A:ELEVATOR TRIM PCT, Percent over 100)%!01.2f!</Value>
+		</GaugeText>
+	</Element>
+
+	<!-- Rudder Trim -->
+	<Element>
+		<Position X="4" Y="102" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>25</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>Rudder: </Value>
+		</GaugeText>
+	</Element>
+	
+
+	<Element>
+		<Position X="215" Y="102" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>30</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>CENTER</HorizontalAlign>
+			<Value>%(A:RUDDER TRIM PCT, Percent over 100)%!01.2f!</Value>
+		</GaugeText>
+	</Element>
+
+</Gauge>

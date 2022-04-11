@@ -1,0 +1,172 @@
+<Gauge Name="BMK Trims" Version="1.0">
+	<Image Name="BMKTrimsBackground.png"  ImageSizes="256,128,256,128"/>
+
+	<!-- Aileron Trim -->
+	<Element>
+		<Position X="97" Y="30" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>20</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>RIGHT</HorizontalAlign>
+			<Value>Aileron: </Value>
+		</GaugeText>
+	</Element>
+	<Element>
+		<Position X="116" Y="26"/>
+		<Image Name="BMKTrimScale.png"  ImageSizes="128,12,128,12"/>
+	</Element>
+	<Element>
+		<Position X="111" Y="18"/>
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>8</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>L</Value>
+		</GaugeText>
+	</Element>
+	<Element>
+		<Position X="236" Y="18"/>
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>8</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>R</Value>
+		</GaugeText>
+	</Element>
+	<Element>
+		<Position X="177" Y="26"/>
+		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8">
+			<Axis X="0"/>
+		</Image>
+		<Shift>
+            <Value Minimum="-1" Maximum="1">(A:AILERON TRIM PCT, Percent over 100)</Value>
+            <Nonlinearity>
+                <Item Value="-1" X="-64" Y="0" />
+                <Item Value="0" X="0" Y="0" />
+                <Item Value="1" X="64" Y="0" />
+            </Nonlinearity>
+        </Shift>
+	</Element>
+
+	<!-- Elevator Trim -->
+	<Element>
+		<Position X="97" Y="66" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>20</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>RIGHT</HorizontalAlign>
+			<Value>Elevator: </Value>
+		</GaugeText>
+	</Element>
+	<Element>
+		<Image Name="BMKTrimScale.png"  ImageSizes="128,12,128,12"/>
+		<Position X="116" Y="62"/>
+	</Element>
+<!--
+	<Element>
+		<Image Name="BMKTrimElevatorTORange.png"  ImageSizes="32,8,32,8"/>
+		<Position X="164" Y="64"/>
+	</Element>
+-->
+	<Element>
+		<Position X="108" Y="54"/>
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>8</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>DN</Value>
+		</GaugeText>
+	</Element>	
+<!--
+	<Element>
+		<Position X="171" Y="78"/>
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>8</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>TO</Value>
+		</GaugeText>
+	</Element>	
+-->	
+	<Element>
+		<Position X="234" Y="54"/>
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>8</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>UP</Value>
+		</GaugeText>
+	</Element>
+	<Element>
+		<Position X="177" Y="62"/>
+		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8">
+			<Axis X="0"/>
+		</Image>
+		<Shift>
+            <Value Minimum="-1" Maximum="1">(A:ELEVATOR TRIM PCT, Percent over 100)</Value>
+            <Nonlinearity>
+                <Item Value="-1" X="-64" Y="0" />
+                <Item Value="0" X="0" Y="0" />
+                <Item Value="1" X="64" Y="0" />
+            </Nonlinearity>
+        </Shift>
+	</Element>
+
+	<!-- Rudder Trim -->
+	<Element>
+		<Position X="97" Y="102" />
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>20</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>RIGHT</HorizontalAlign>
+			<Value>Rudder: </Value>
+		</GaugeText>
+	</Element>
+	<Element>
+		<Image Name="BMKTrimScale.png"  ImageSizes="128,12,128,12"/>
+		<Position X="116" Y="98"/>
+	</Element>
+	<Element>
+		<Position X="111" Y="90"/>
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>8</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>L</Value>
+		</GaugeText>
+	</Element>
+	<Element>
+		<Position X="236" Y="90"/>
+		<GaugeText>
+			<FontFace>ARIAL NARROW</FontFace>
+			<FontHeight>8</FontHeight>
+			<FontColor>0xE0E0E0</FontColor>
+			<HorizontalAlign>LEFT</HorizontalAlign>
+			<Value>R</Value>
+		</GaugeText>
+	</Element>	
+	<Element>
+		<Position X="177" Y="98"/>
+		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8">
+			<Axis X="0"/>
+		</Image>
+		<Shift>
+            <Value Minimum="-1" Maximum="1">(A:RUDDER TRIM PCT, Percent over 100)</Value>
+            <Nonlinearity>
+                <Item Value="-1" X="-64" Y="0" />
+                <Item Value="0" X="0" Y="0" />
+                <Item Value="1" X="64" Y="0" />
+            </Nonlinearity>
+        </Shift>
+	</Element>
+
+</Gauge>
