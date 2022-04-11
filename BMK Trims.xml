@@ -38,9 +38,7 @@
 	</Element>
 	<Element>
 		<Position X="177" Y="26"/>
-		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8">
-			<Axis X="0"/>
-		</Image>
+		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8"/>
 		<Shift>
             <Value Minimum="-1" Maximum="1">(A:AILERON TRIM PCT, Percent over 100)</Value>
             <Nonlinearity>
@@ -66,12 +64,6 @@
 		<Image Name="BMKTrimScale.png"  ImageSizes="128,12,128,12"/>
 		<Position X="116" Y="62"/>
 	</Element>
-<!--
-	<Element>
-		<Image Name="BMKTrimElevatorTORange.png"  ImageSizes="32,8,32,8"/>
-		<Position X="164" Y="64"/>
-	</Element>
--->
 	<Element>
 		<Position X="108" Y="54"/>
 		<GaugeText>
@@ -81,19 +73,7 @@
 			<HorizontalAlign>LEFT</HorizontalAlign>
 			<Value>DN</Value>
 		</GaugeText>
-	</Element>	
-<!--
-	<Element>
-		<Position X="171" Y="78"/>
-		<GaugeText>
-			<FontFace>ARIAL NARROW</FontFace>
-			<FontHeight>8</FontHeight>
-			<FontColor>0xE0E0E0</FontColor>
-			<HorizontalAlign>LEFT</HorizontalAlign>
-			<Value>TO</Value>
-		</GaugeText>
-	</Element>	
--->	
+	</Element>
 	<Element>
 		<Position X="234" Y="54"/>
 		<GaugeText>
@@ -106,9 +86,7 @@
 	</Element>
 	<Element>
 		<Position X="177" Y="62"/>
-		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8">
-			<Axis X="0"/>
-		</Image>
+		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8"/>
 		<Shift>
             <Value Minimum="-1" Maximum="1">(A:ELEVATOR TRIM PCT, Percent over 100)</Value>
             <Nonlinearity>
@@ -156,9 +134,7 @@
 	</Element>	
 	<Element>
 		<Position X="177" Y="98"/>
-		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8">
-			<Axis X="0"/>
-		</Image>
+		<Image Name="BMKTrimIndicator.png"  ImageSizes="6,8,6,8"/>
 		<Shift>
             <Value Minimum="-1" Maximum="1">(A:RUDDER TRIM PCT, Percent over 100)</Value>
             <Nonlinearity>
